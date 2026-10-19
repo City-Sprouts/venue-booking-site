@@ -43,3 +43,7 @@ collections:
       - {label: "Address", name: "address", widget: "text"}
       - {label: "Contact Number", name: "phone", widget: "string"}
       - {label: "Email", name: "email", widget: "string"}
+backend:
+  name: github
+  repo: City-Sprouts/venue-booking-site
+  branch: main
