@@ -5,22 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Venue booking</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-    
-    // Handle password recovery
-    window.netlifyIdentity.on("error", err => console.error("Identity error:", err));
-  }
-</script>
+  <!-- Your venue booking content -->
 </body>
 </html>
