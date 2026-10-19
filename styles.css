@@ -1,0 +1,26 @@
+:root{--ink:#16262b;--mute:#5c6d72;--paper:#f2f5f4;--line:#cfd9d9;--accent:#0f6e6e;--busy:#e3e8e8;--warn:#a3402f;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink)}
+#app{max-width:980px;margin:0 auto;padding:24px 20px 56px}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style",serif;font-weight:600;letter-spacing:-.01em;margin:0 0 .5rem}
+h1{font-size:2rem}h2{font-size:1.3rem}h3{font-size:1.05rem}
+.intro{max-width:62ch;color:var(--mute);margin:0 0 1rem}.note{color:var(--mute);font-size:.9rem}.err{color:var(--warn);font-weight:600}
+.tabs{display:flex;gap:8px;margin:0 0 20px}
+.layout{display:grid;gap:20px}@media(min-width:780px){.layout{grid-template-columns:280px 1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:16px}
+.group{margin-bottom:18px}.chips{display:flex;flex-wrap:wrap;gap:8px}
+label{display:block;font-size:.9rem;margin:0 0 12px}
+input,select,textarea{display:block;width:100%;margin-top:4px;font:inherit;color:inherit;background:#fff;border:1px solid var(--line);border-radius:6px;padding:9px 10px}
+input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0}
+.chip,.btn{font:inherit;border:1.5px solid var(--line);background:#fff;color:inherit;border-radius:999px;padding:7px 14px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn{border-radius:6px;padding:10px 16px;font-weight:600}
+.chip[aria-pressed=true],.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.danger{color:var(--warn);border-color:var(--warn)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:10px;margin-bottom:16px}
+.slot{font:inherit;border:1.5px solid var(--line);background:#fff;border-radius:6px;padding:12px 6px;cursor:pointer;color:inherit}
+.slot small{display:block;font-size:.75rem;color:var(--mute)}
+.slot[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}.slot[aria-pressed=true] small{color:#d9f0f0}
+.slot:disabled{cursor:not-allowed;color:var(--mute);border-style:dashed;background:repeating-linear-gradient(135deg,var(--busy) 0 6px,#eef2f1 6px 12px)}
+.summary{font-weight:600;margin:0 0 12px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.item{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
+.savebar{position:sticky;bottom:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+:focus-visible{outline:3px solid #f2b705;outline-offset:2px}

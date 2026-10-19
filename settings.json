@@ -1,0 +1,7 @@
+{
+  "venue": { "name": "", "intro": "", "email": "", "currency": "$", "formUrl": "", "timezone": "Asia/Singapore" },
+  "rules": { "open": "09:00", "close": "21:00", "slot": 60, "buffer": 0, "notice": 0, "window": 90, "days": [0, 1, 2, 3, 4, 5, 6] },
+  "locations": [],
+  "rooms": [],
+  "busy": []
+}
