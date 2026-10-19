@@ -20,10 +20,10 @@ collections:
         name: "rates"
         widget: "object"
         fields:
-          - {label: "Hourly Rate (\$)", name: "hourly", widget: "number"}
-          - {label: "Half Day Rate (\$)", name: "halfday", widget: "number"}
-          - {label: "Full Day Rate (\$)", name: "fullday", widget: "number"}
-          - {label: "Weekend Rate (\$)", name: "weekend", widget: "number", required: false}
+          - {label: "Hourly Rate ($)", name: "hourly", widget: "number"}
+          - {label: "Half Day Rate ($)", name: "halfday", widget: "number"}
+          - {label: "Full Day Rate ($)", name: "fullday", widget: "number"}
+          - {label: "Weekend Rate ($)", name: "weekend", widget: "number", required: false}
       - {label: "Venue Image", name: "image", widget: "image", required: false}
       - {label: "Available for Booking", name: "available", widget: "boolean", default: true}
       - label: "Amenities"
