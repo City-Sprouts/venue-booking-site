@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/venues"
+public_folder: "/images/venues"
+
+collections:
+  - name: "venues"
+    label: "Venues"
+    folder: "content/venues"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Venue Name", name: "title", widget: "string"}
+      - {label: "Location/Address", name: "location", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Capacity (people)", name: "capacity", widget: "number"}
+      - label: "Rates"
+        name: "rates"
+        widget: "object"
+        fields:
+          - {label: "Hourly Rate (\$)", name: "hourly", widget: "number"}
+          - {label: "Half Day Rate (\$)", name: "halfday", widget: "number"}
+          - {label: "Full Day Rate (\$)", name: "fullday", widget: "number"}
+          - {label: "Weekend Rate (\$)", name: "weekend", widget: "number", required: false}
+      - {label: "Venue Image", name: "image", widget: "image", required: false}
+      - {label: "Available for Booking", name: "available", widget: "boolean", default: true}
+      - label: "Amenities"
+        name: "amenities"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Amenity", name: "item", widget: "string"}
+
+  - name: "locations"
+    label: "Locations"
+    folder: "content/locations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Location Name", name: "title", widget: "string"}
+      - {label: "Address", name: "address", widget: "text"}
+      - {label: "Contact Number", name: "phone", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
